@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<html>
+<head>
+<!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css using the same CDN as index.html-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <header>
+    <a href="#" style="margin-top:20px; margin-left:20px;" data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">menu</i></a>
+  </header>
+<main>
+  <ul id="slide-out" class="side-nav">
+<li><div class="user-view grey darken-3" style="padding-top:20px; width:100%">
+  <a href="" style="height:auto;" class="center-align"><img class="circle responsive-img" img src="{% static "image/Me.jpg" %}" alt="My image" style="height:150px;"/></a>
+  <a href=""><span class="white-text name">Wenjing Zhu</span></a>
+  <a href=""><span class="white-text email">475317147z@gmail.com</span></a>
+</div></li>
+<li><a href=""><i class="material-icons">cloud</i>First Link With Icon</a></li>
+<li><a href="">Second Link</a></li>
+<li><div class="divider"></div></li>
+<li><a class="subheader">Subheader</a></li>
+<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+</ul>
+
+
+
+  <div class="container" style="margin-top:40px;">
+        {% block content %}
+        {% endblock %}
+  </div>
+</main>
+
+
+
+  <footer>
+
+  </footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script>
+
+$('.btn-floating').sideNav({
+    menuWidth: 300, // Default is 300
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    draggable: true, // Choose whether you can drag to open on touch screens,
+    onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+    onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+  }
+);
+$('.btn-floating').sideNav('show');
+</script>
+</html>
