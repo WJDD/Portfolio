@@ -14,11 +14,11 @@
     <header>
       <div class="navbar-fixed">
         <nav>
-        <div class="nav-wrapper grey darken-2">
+        <div class="nav-wrapper grey lighten-3">
           <div class="container">
-            <a href="{% url 'home' %}" class="brand-logo"><font face="STKaiti">朱文憬</font></a>
+            <a href="{% url 'home' %}" class="brand-logo"><font face="STKaiti"><span class="black-text">朱文憬</span></font></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="{% url 'home' %}">Myself</a></li>
+              <li><a href="{% url 'home' %}"><span class="black-text">Home</a></li>
               <li><a href="{% url 'skill' %}"><span class="blue-text text-lighten-1">Skill</span></a></li>
               <li><a href="{% url 'p&e' %}"><span class="teal-text text-accent-3">Project & Experience</span></a></li>
             </ul>
@@ -31,19 +31,19 @@
     <ul id="slide-out" class="side-nav">
       <li>
         <div class="user-view grey darken-3" style="padding-top:20px; width:100%">
-        <p href="" style="height:auto;" class="center-align"><img class="circle responsive-img" img src="{% static "image/Me.jpg" %}" alt="My image" style="height:150px;"/></p>
+        <p href="" style="height:auto;" class="center-align"><img class="circle responsive-img" img src="{% static "image/Wenjing.jpg" %}" alt="My image" style="height:150px;"/></p>
         <p href="" class="center-align"><span class="white-text name">Wenjing Zhu</span></p>
         <p href="" class="center-align"><span class="white-text email">475317147z@gmail.com</span></p>
         </div>
       </li>
-      <li><a href="{% url 'home' %}"><i class="material-icons">home</i>Home Page</a></li>
+      <li><a href="{% url 'home' %}"><i class="material-icons">home</i>Home</a></li>
       <li><a href=""><i class="material-icons">info</i>About</a></li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Subheader</a></li>
       <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
   <div class="fixed-action-btn">
-    <a data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">menu</i></a>
+    <a data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light grey lighten-2"><i class="material-icons">menu</i></a>
   </div>
 
           {% block content %}
@@ -56,7 +56,7 @@
   <footer>
 
   </footer>
-  
+
 </body>
 
 
