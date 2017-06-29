@@ -8,5 +8,12 @@ main {
   flex: 1 0 auto;
 }
 
+html{
+  font-family: Georgia, "Times New Roman",
+             "Microsoft YaHei", "微软雅黑",
+             STKaiti, "华文细黑",
+             serif;
+}
+
 
 .center-btn { text-align: center }
