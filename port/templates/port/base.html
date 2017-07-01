@@ -14,13 +14,13 @@
     <header>
       <div class="navbar-fixed">
         <nav>
-        <div class="nav-wrapper grey lighten-3">
+        <div class="nav-wrapper grey lighten-2">
           <div class="container">
-            <a href="{% url 'home' %}" class="brand-logo"><font face="STKaiti"><span class="black-text">朱文憬</span></font></a>
+            <a href="{% url 'home' %}" class="brand-logo"><i class="large material-icons"><span class="black-text">games</span></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="{% url 'home' %}"><span class="black-text">Home</a></li>
-              <li><a href="{% url 'skill' %}"><span class="blue-text text-lighten-1">Skill</span></a></li>
-              <li><a href="{% url 'p&e' %}"><span class="teal-text text-accent-3">Project & Experience</span></a></li>
+              <li><a href="#technology"><span class="blue-text text-lighten-2">Technology</span></a></li>
+              <li><a href="#p&e"><span class="orange-text text-lighten-2">Project & Experience</span></a></li>
             </ul>
           </div>
         </div>
@@ -30,7 +30,7 @@
   <main>
     <ul id="slide-out" class="side-nav">
       <li>
-        <div class="user-view grey darken-3" style="padding-top:20px; width:100%">
+        <div class="user-view grey darken-2" style="padding-top:20px; width:100%">
         <p href="" style="height:auto;" class="center-align"><img class="circle responsive-img" img src="{% static "image/Wenjing.jpg" %}" alt="My image" style="height:150px;"/></p>
         <p href="" class="center-align"><span class="white-text name">Wenjing Zhu</span></p>
         <p href="" class="center-align"><span class="white-text email">475317147z@gmail.com</span></p>
@@ -43,7 +43,7 @@
       <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
   <div class="fixed-action-btn">
-    <a data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light grey lighten-2"><i class="material-icons">menu</i></a>
+    <a data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light grey darken-2"><i class="material-icons">menu</i></a>
   </div>
 
           {% block content %}
@@ -73,6 +73,10 @@ $('.btn-floating').sideNav({
     onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
   }
 );
+
+$(document).ready(function(){
+      $('.parallax').parallax();
+});
 
 </script>
 </html>
