@@ -19,8 +19,8 @@
             <a href="{% url 'home' %}" class="brand-logo"><i class="large material-icons"><span class="black-text">games</span></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="{% url 'home' %}"><span class="black-text">Home</a></li>
-              <li><a href="#technology"><span class="blue-text text-lighten-2">Technology</span></a></li>
-              <li><a href="#p&e"><span class="orange-text text-lighten-2">Project & Experience</span></a></li>
+              <li><a href="{% url 'home' %}#technology"><span class="blue-text text-darken-1">Technology</span></a></li>
+              <li><a href="{% url 'home' %}#p&e"><span class="green-text text-darken-1">Project & Experience</span></a></li>
             </ul>
           </div>
         </div>
@@ -31,16 +31,16 @@
     <ul id="slide-out" class="side-nav">
       <li>
         <div class="user-view grey darken-2" style="padding-top:20px; width:100%">
-        <p href="" style="height:auto;" class="center-align"><img class="circle responsive-img" img src="{% static "image/Wenjing.jpg" %}" alt="My image" style="height:150px;"/></p>
-        <p href="" class="center-align"><span class="white-text name">Wenjing Zhu</span></p>
-        <p href="" class="center-align"><span class="white-text email">475317147z@gmail.com</span></p>
+          <p href="" style="height:auto;" class="center-align"><img class="circle responsive-img" img src="{% static "image/Wenjing.jpg" %}" alt="My image" style="height:150px;"></p>
+          <p href="" class="center-align"><span class="white-text name">Wenjing Zhu</span></p>
+          <p href="" class="center-align"><span class="white-text email">475317147z@gmail.com</span></p>
         </div>
       </li>
       <li><a href="{% url 'home' %}"><i class="material-icons">home</i>Home</a></li>
-      <li><a href=""><i class="material-icons">info</i>About</a></li>
+      <li><a href="{% url 'about' %}"><i class="material-icons">info</i>About</a></li>
       <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      <!--<li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>-->
     </ul>
   <div class="fixed-action-btn">
     <a data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light grey darken-2"><i class="material-icons">menu</i></a>
