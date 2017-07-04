@@ -1,5 +1,3 @@
 This is my portfolio, and probably a potential personal website.
 
 Technology implemented: Django, HTML, CSS, Javascript and Materialize.
-
-Unfortunately, this website doesn't get along with Firefox very well.
